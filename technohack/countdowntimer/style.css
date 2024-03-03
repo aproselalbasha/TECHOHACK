@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+   
+   
+    
+}
+.main{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    padding: 40px;
+    background-color: antiquewhite;
+    
+
+
+
+
+    
+}
+button{
+    margin-top: 20px;
+    display: inline-flex;
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-right: 20PX;
+    color: white;
+    outline: none;
+    border: none;
+    
+}
+.start{
+    background-color: green;
+}
+.start-active ,.stop-active , .reset-active{
+    pointer-events: none;
+    opacity: 0.5;
+}
+.stop{
+    background-color: blue;
+}
+.reset{
+    background-color: red;
+}
+.container{
+    display: flex;
+  font-size: 40px;
+}
+.label{
+    width: 75px;
+    height: 30px;
+    margin-right: 15px;
+    text-decoration:none;
+    border: 2PX solid black;
+    text-align: center;font-size: 25px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.title p{
+    display: inline-flex;
+    padding-right: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+
+    
+}
+.m,.s{
+    position: relative;
+    left: 11px;
+}
+.semi{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: 2px;
+}
