@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook login clone</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+<nav class="navbar">
+    <div>
+        <img class="logo" src="./images/fb.png" alt="logo">
+
+    </div>
+  
+  <form class="login-form">
+    <div class="email">
+        <div class="font">Email or phone</div>
+        <input type="text" required>
+    </div>
+    <div class="password" >
+        <div class="font" >Password</div>
+        <input type="password" required>
+       
+    </div>
+    <div>
+
+    </div>
+    
+        <button class="login" type="submit">Login</button>
+    
+    
+   
+
+
+  </form>
+        
+
+    </nav>
+    <div class="container">
+        <div class="left">
+         <img src="./images/fbbdy.png" alt="image">
+         <h1 class="thanks">Thanks for stopping by!</h1>
+         <h1 >We Hope to see you again soon.</h1>
+        </div>
+        <div class="right">
+            <div class="text">
+                <h1>Create an account</h1>
+                <h3>it's free and always will be</h3>
+
+            </div>
+        
+            
+                <form >
+                    <div class="name" >
+                        <input type="text" class="place"  placeholder="First name" class="fname" required>
+                        <input type="text"  class="place" placeholder="Last name" class="lname" required>
+
+                    </div>
+                    <div class="form-sub">
+                    <input type="text" class="place" id="phone" placeholder="mobile number or Email" required>
+                    <input type="password" class="place" id="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                    <input type="password" class="place" id="cpassword" placeholder="Confirm password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                    </div>
+                    
+                    <h3>Birthday</h3>
+
+                    <div class="select-group">
+                        <div class="select">
+                            
+                            <select name="month" id="month" required>
+                                <option value="">Month</option>
+                                <option value="jan">Jan</option>
+                                <option value="feb">Feb</option>
+                                <option value="mar">Mar</option>
+                                <option value="apr">Apr</option>
+                                <option value="may">May</option>
+                                <option value="jun">Jun</option>
+                                <option value="jul">Jul</option>
+                                <option value="aug">Aug</option>
+                                <option value="sep">Sep</option>
+                                <option value="oct">Oct</option>
+                                <option value="nov">Nov</option>
+                                <option value="dec">Dec</option>
+                            </select>
+                        
+                            
+                            <select name="day" id="day" required>
+                                <option value="">Days</option>
+                            </select>
+                        
+                            
+                            <select name="year" id="year" required>
+                                <option value="">Year</option>
+                            </select>
+                        
+                            <script>
+                               
+                                var daySelect = document.getElementById('day');
+                                for (var i = 1; i <= 31; i++) {
+                                    var option = document.createElement('option');
+                                    option.value = i;
+                                    option.text = i;
+                                    daySelect.add(option);
+                                }
+                        
+                            
+                                var yearSelect = document.getElementById('year');
+                                var currentYear = new Date().getFullYear();
+                                for (var i = currentYear; i >= 1900; i--) {
+                                    var option = document.createElement('option');
+                                    option.value = i;
+                                    option.text = i;
+                                    yearSelect.add(option);
+                                }
+                            </script>
+                        </div>
+                        <p>why do i need to provide my <br> date of birth ?</p>
+                        
+                    </div>
+                    <div class="radio">
+                      
+                        <input type="radio" name="gender" required> <label for="">Male</label>
+
+                        <input type="radio" name="gender" > <label for="">Female</label>
+                        
+                    </div>
+                    <p>By clicking Sign Up, you agree to our<a href=""><span> Terms, Data Policy and <br>Cookies Policy </span>.</a>   You may receive SMS Notifications from us and <br> can opt out any time. </p>
+                    <button class="signup" type="submit" id="signup">Sign up</button>
+                    
+                    
+
+                   
+
+                </form>
+                
+            
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

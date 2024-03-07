@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 80px;
+    width: 100%;
+    background: linear-gradient(#48649f, #385998);
+    border-bottom: 1px solid #253a69;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    position: absolute;
+    padding-top: 15px;
+    height: 70px;
+    width: 190px;
+    left: 13%;
+}
+
+.login-form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    color: white;
+    padding: 10px; 
+}
+
+.login-form input {
+    height: 30px;
+    border: 2px solid;
+    margin-top: 5px; 
+}
+
+.login {
+    width: 80px; 
+    height: 30px;
+    font-weight: 600;
+    margin-left: 15px;
+    border-radius: 2px;
+    background: #2d5bba;
+    color: white;
+    outline: none;
+    border: 1px solid #224285;
+    position: relative;
+    top: 9px;
+}
+
+.login:hover {
+    background: #3b5998;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    height: 100vh;
+    background-color: whitesmoke;
+
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin-bottom: 250px;
+}
+.thanks{
+    color: #4666a5;
+    margin-bottom: 5px;
+}
+h1{
+   font-weight: 100;
+}
+
+
+.form-sub{
+    display: flex;
+    flex-direction: column;
+
+}
+.select-group{
+    display: flex;
+}
+.text{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.text h1{
+    font-size: 40px;
+    margin-bottom: 2px;
+
+}
+.name {
+    margin-bottom: 25px;
+ 
+  
+  
+}
+.form-sub input{
+    margin-bottom: 20px;
+    height:40px ;
+    width: 44%;
+    
+    
+
+
+}
+.name input{
+    height: 40px;
+ margin-right: 20px;
+
+ 
+ 
+}
+.place{
+    padding: 10PX;
+    background-color:white;
+    border: .5px solid gray
+}
+input{
+    font-size: large;
+  
+}
+
+.select-group{
+   
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.select-group p{
+    color: #235ad1;
+   
+
+}
+span{
+    color: blue;
+    
+}
+a{
+    text-decoration: none;
+}
+.radio{
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+}
+.radio input{
+    margin-right: 20px;
+}
+label{
+   position: relative;
+   left: -18px;
+}
+.signup{
+    margin-top: 20px;
+    width: 130px;
+    height: 40px;
+    background-color: rgb(55, 131, 55);
+    color: white;
+    font-weight: 600;
+    font-size: larger;
+    outline: none;
+    border: 1px solid black;
+    border: none;
+    border-radius: 10px;
+}
+select{
+    width: 100px;
+    height: 20px;
+    background-color: white;
+    border: .5 solid gray;
+    color: black;
+}
