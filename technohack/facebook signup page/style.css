@@ -178,3 +178,41 @@ select{
     border: .5 solid gray;
     color: black;
 }
+/* resposive  */
+@media screen and (max-width:1000px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items in the column */
+        height: auto; /* Allow the height to adjust based on content */
+    }
+
+    .logo {
+        position: relative; /* Reset position */
+        left: 0; /* Reset left position */
+        margin-bottom: 10px; /* Add some spacing between logo and other items */
+    }
+
+    .left{
+        display: none;
+    }
+    .right{
+        position: relative;
+        left: 60%;
+       
+    }
+    .right input{
+        margin-top: 10px;
+        
+        
+    }
+    .form-sub input{
+     width: 75%;
+     margin-top: -10px;
+    }
+    select{
+        margin-bottom: 6px;
+        width: 100%;
+        
+    }
+    
+}
